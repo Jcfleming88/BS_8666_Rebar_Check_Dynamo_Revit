@@ -32,34 +32,8 @@ other elements you don't need to see.
 4 - Run "Rebar Check Full.dyn" or "Rebar Check Selected Elements.dyn" - The only difference
 in the two scripts is that the "Rebar Check Selected Elements.dyn" requires you to click the
 selection node at the start and choose elements that you want to check, the full version
-will check all elements. See the known issues below for why two scripts were written
-
----
-
-# Known Issues
-
-- Rebar that has been grouped for any reason will prevent the script from running. When
-trying to write to the custom parameters, Revit does not allow elements in the group to be
-written to. This will stop the script running and abort the whole thing.
-
->- Fixes
->- Rebar Check Full - Within this script a node has been identified that can be frozen.
-Freezing the node will prevent the output data from being written to the bars and prevent
-the schedule from updating but will still produce the visual output showing any errors.
->- Rebar Check Selected Elements - This alternative script allows specific bars to be
-selected so any grouped elements can be avoided. It also filters out any non rebar
-elements so rebar can be selected by simply dragging a box over the elements.
-
-- Certain elements cannot currently be checked. An example of this is when varying length
-bars are created. This is because Revit fills the dimension parameters of the bars with
-"varying" rather than a length so the dimensions of the bars cannot be pulled.
-
->- Fixes
->- Currently the only option is to highlight unchecked bars to be checked by hand (they
-show as a blue bar in the current setup). It is likely the dimensions are stored in a
-different parameter or the rebar elements so it may be possible to find this and update
-the script to use this instead, however, some snooping of the parameters would be required
-to find this.
+will check all elements. If any rebar elements are grouped then this will stop the script
+from running, this is why two scripts were created. This is noted under issues.
 
 ---
 
