@@ -1,7 +1,9 @@
-# BS-8666-Dynamo-Revit-Check
+# BS 8666 Rebar Check in Dynamo/Revit
 Check of rebar elements within Revit (using Dynamo) to BS 8666 and with a schedule and visual output
 
 ---
+
+![image](https://user-images.githubusercontent.com/64108488/90009319-bc8fcd00-dc95-11ea-9648-39ef1d5f7236.png)
 
 ## Description
 
@@ -14,6 +16,8 @@ then updates custom parameters that the scripts setup. This data is then shown i
 that is setup automatically and highlights any errors in modelling. There is also a simple
 colour co-ordinated output produced in the active view. This colour output was used in 3D 
 views to help quickly locate bars that were modelled incorrectly.
+
+![image](https://user-images.githubusercontent.com/64108488/90009251-a5e97600-dc95-11ea-8754-6b1f23eaa55f.png)
 
 ---
 
