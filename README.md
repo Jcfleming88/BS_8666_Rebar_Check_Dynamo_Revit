@@ -21,12 +21,19 @@ views to help quickly locate bars that were modelled incorrectly.
 
 ---
 
+# Requirements
+
+Download the "BIM4Struc" package in Dynamo's package manager before running the scripts. 
+The check uses this package to alter how the bars are viewed.
+
+---
+
 # How to Use
 
 1 - Run "Rebar Check Setup.dyn" - This creates custom parameters that will hold data
 produced in the check such as the check date, status and error messages.
 
-2 - Run "Rebar Check Schedule.dyn" (optional) - This creates a new schedule that give a
+2 - Run "Rebar Check Schedule.dyn" (optional) - This creates a new schedule that gives a
 quick and easy view of any errors in the model.
 
 3 - Go to the view you wish to check the rebar in - I would suggest opening a new 3D view
